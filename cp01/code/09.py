@@ -18,7 +18,7 @@ if tmp!="":
 result=""
 s=""
 for i in range(len(word)):
-    if len(word[i])>4:
+    if len(word[i])<=4:
         result+=word[i]
         result+=" "
     else:
@@ -36,4 +36,5 @@ print(result)
         
 
         
+
 
