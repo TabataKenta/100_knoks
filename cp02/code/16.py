@@ -6,7 +6,7 @@ def shuffle_lines(filename):
         
     random.shuffle(lines)
     
-    with open("shuffled-"+filename, 'w') as f2:
+    with open("16output-"+filename, 'w') as f2:
         f2.writelines(lines)
         
 shuffle_lines('popular-names.txt')
