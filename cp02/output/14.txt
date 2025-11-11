@@ -1,0 +1,12 @@
+$ cut -f 1 popular-names.txt | head -n 10
+
+Mary
+Anna
+Emma
+Elizabeth
+Minnie
+Margaret
+Ida
+Alice
+Bertha
+Sarah
