@@ -17,13 +17,13 @@ def file_N_split(N):
             cnt+=1
             text.append(line)
             if cnt==cnt_split:
-                with open(f'popular-names_{file_num}.txt','w') as f2:
+                with open(f'15output_{file_num}.txt','w') as f2:
                     f2.write(''.join(text))
                     text=[]
                     file_num+=1
                     cnt=0
     if text:
-        with open(f'popular-names_{file_num}.txt','w') as f2:
+        with open(f'15output_{file_num}.txt','w') as f2:
             f2.write(''.join(text))
             
             
