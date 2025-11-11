@@ -11,5 +11,5 @@ with open('popular-names.txt', 'r') as f:
                 name[name_line]+=1
 
 #出現頻度を降順でソート
-sorrt_naame=sorted(name.items(),key=lambda x:x[1],reverse=True) 
-print(sorrt_naame)    
+sort_name=sorted(name.items(),key=lambda x:x[1],reverse=True) 
+print(sort_name)    
