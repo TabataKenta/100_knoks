@@ -26,4 +26,4 @@ def file_N_split(N):
         with open(f'15output_{file_num}.txt','w') as f2:
             f2.write(''.join(text))
             
-            
+#unix: split -l $(($(wc -l < popular-names.txt) / 10)) popular-names.txt 15output_            
