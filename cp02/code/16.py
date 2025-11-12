@@ -10,4 +10,4 @@ def shuffle_lines(filename):
         f2.writelines(lines)
         
 shuffle_lines('popular-names.txt')
-            
+#unix: shuf popular-names.txt > 16output-popular-names.txt           
