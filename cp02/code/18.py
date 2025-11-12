@@ -13,3 +13,4 @@ with open('popular-names.txt', 'r') as f:
 #出現頻度を降順でソート
 sort_name=sorted(name.items(),key=lambda x:x[1],reverse=True) 
 print(sort_name)    
+#unix: cut -f 1 popular-names.txt | sort | uniq -c | sort -k1,1nr  
