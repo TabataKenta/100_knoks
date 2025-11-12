@@ -7,4 +7,4 @@ with open('popular-names.txt', 'r') as f:
         
 sorted_lst=sorted(lst,key=itemgetter(3),reverse=True)
 print(sorted_lst)
-    
+#unix: sort -k3,3nr popular-names.txt    
