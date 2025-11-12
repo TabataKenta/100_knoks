@@ -10,3 +10,4 @@ def tab_to_space(N):
                 break
 
 tab_to_space(10)
+#unix: head -n 10 popular-names.txt | expand -t 1
