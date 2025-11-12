@@ -11,3 +11,4 @@ def head_file(N):
     return result
 
 print(head_file(10))
+#unix: head -n 10 popular-names.txt | cut -f1
