@@ -6,3 +6,5 @@ def count_line(filename):
     return cnt
         
 print(count_line('popular-names.txt'))
+
+# UNIX: wc -l < popular-names.txt
