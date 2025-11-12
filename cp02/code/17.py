@@ -15,3 +15,6 @@ with open('popular-names.txt', 'r') as f:
 
 unique_list=remove_duplication(lst)
 print(unique_list)        
+
+
+#unix: cut -f1 popular-names.txt | sort | uniq
