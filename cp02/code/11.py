@@ -9,3 +9,4 @@ def display_head_file(N):
                 break
 
 display_head_file(10)
+#unix: head -n 10 popular-names.txt
