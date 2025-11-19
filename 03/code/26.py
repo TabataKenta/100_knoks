@@ -59,7 +59,7 @@ emphasis_clean_dict={}
 # 辞書の各要素をループで処理
 for key, value in info_dict.items():
     # 1.強い強調 ('''''...''''') を除去
-    cleaned_value = re.sub(r"'''''(.*?)'''''", r'\1', value)
+    cleaned_value = re.sub(r"'''''(.*?)'''''", r'\1', cleaned_value)
     
     # 2.強調('''...''') を除去
     cleaned_value = re.sub(r"'''(.*?)'''", r'\1', cleaned_value)
