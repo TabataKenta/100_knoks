@@ -1,0 +1,2 @@
+$ python3 35.py
+35output.htmlの保存完了
