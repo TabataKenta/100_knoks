@@ -20,8 +20,8 @@ with open('questions-words.txt', 'r') as f:
             
             try:
                 vec=model.most_similar(positive=[words[1],words[2]],negative=[words[0]],topn=1)
-                similar_word=vec[0][0]
-                score=vec[0][1]
+                similar_word=vec[0][0] # 最も類似度が高い単語（予測結果）
+                score=vec[0][1]        # その類似度スコア
                 
                 # 次の課題で正解率を計算するため、問題(A,B,C)・正解(D)・予測結果・スコアを並べて出力
                 # 順序: A B C 正解(D) 予測(Prediction) 類似度(Score)
