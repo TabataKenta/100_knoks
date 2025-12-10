@@ -19,6 +19,8 @@ with open('questions-words.txt', 'r') as f:
             words=line.split()
             
             try:
+                # ベクトル計算: vec(B) - vec(A) + vec(C) に最も近い単語を探す
+                # positive=[足すベクトル], negative=[引くベクトル]
                 vec=model.most_similar(positive=[words[1],words[2]],negative=[words[0]],topn=1)
                 similar_word=vec[0][0] # 最も類似度が高い単語（予測結果）
                 score=vec[0][1]        # その類似度スコア
