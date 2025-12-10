@@ -19,14 +19,13 @@ with open('questions-words.txt', 'r') as f:
             words=line.split()
             
             try:
-                # ベクトル計算: vec(B) - vec(A) + vec(C) に最も近い単語を探す
+                # ベクトル計算: vec(2列目) - vec(1列目) + vec(3列目) に最も近い単語を探す
                 # positive=[足すベクトル], negative=[引くベクトル]
                 vec=model.most_similar(positive=[words[1],words[2]],negative=[words[0]],topn=1)
                 similar_word=vec[0][0] # 最も類似度が高い単語（予測結果）
                 score=vec[0][1]        # その類似度スコア
                 
-                # 次の課題で正解率を計算するため、問題(A,B,C)・正解(D)・予測結果・スコアを並べて出力
-                # 順序: A B C 正解(D) 予測(Prediction) 類似度(Score)
+                # 順序: 事例(words[0]~words[3]) 類似度が高い単語 類似度スコア
                 print(f"{words[0]} {words[1]} {words[2]} {words[3]} {similar_word} {score}")
                 
             except KeyError:
