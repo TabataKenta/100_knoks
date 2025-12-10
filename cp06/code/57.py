@@ -24,13 +24,13 @@ with open('questions-words.txt', 'r') as f:
 # 重複を除去
 country=list(set(country))
 
-# k-meansクラスタリング
-from sklearn.cluster import KMeans
-
 # 国のベクトルを取得
 country_vec=[]
 for i in country:
     country_vec.append(model[i])
+
+# k-meansクラスタリング
+from sklearn.cluster import KMeans
     
 # クラスタ数を5に設定
 kmeans = KMeans(n_clusters=5, random_state=0).fit(country_vec)
