@@ -14,6 +14,7 @@ with open('questions-words.txt', 'r') as f:
                 target_section = False
             continue 
         
+        # 対象セクション内の行のみ処理を実行
         if target_section:
             words=line.split()
             
@@ -21,7 +22,11 @@ with open('questions-words.txt', 'r') as f:
                 vec=model.most_similar(positive=[words[1],words[2]],negative=[words[0]],topn=1)
                 similar_word=vec[0][0]
                 score=vec[0][1]
+                
+                # 次の課題で正解率を計算するため、問題(A,B,C)・正解(D)・予測結果・スコアを並べて出力
+                # 順序: A B C 正解(D) 予測(Prediction) 類似度(Score)
                 print(f"{words[0]} {words[1]} {words[2]} {words[3]} {similar_word} {score}")
+                
             except KeyError:
             # 辞書にない単語があった場合はスキップ
               pass            
