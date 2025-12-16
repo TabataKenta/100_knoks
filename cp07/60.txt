@@ -1,4 +1,0 @@
-Train Positive: 37569
-Train Negative: 29780
-Dev Positive: 444
-Dev Negative: 428
