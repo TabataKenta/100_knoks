@@ -8,7 +8,7 @@ def create_data_dict(df):
     dataset_list = []
     for index, row in df.iterrows():
         text = row['sentence']
-        label = row['label']
+        label = str(row['label'])
         
         feature = {}
         text_list = text.split()
@@ -31,6 +31,10 @@ def create_data_dict(df):
 train_data = create_data_dict(df_train)
 dev_data = create_data_dict(df_dev)
 
+# 【設問の要求】学習データの最初の事例を目視で確認
+print("=== 最初の事例 (Train) ===")
+print(json.dumps(train_data[0], indent=4))
+
 # 出力
 # ファイルに書き込む
 with open("61_output_train.json", 'w') as f:
@@ -40,4 +44,5 @@ with open("61_output_dev.json", 'w') as f:
     json.dump(dev_data, f, indent=4)
 
             
+
         
