@@ -1,5 +1,7 @@
 import gensim
 import numpy as np
+import pickle
+import torch
 
 def load_pretrained_embeddings(model):
     vocab_size = len(model.index_to_key) + 1  #語彙数 + 1 (パディング用)
@@ -30,9 +32,19 @@ if __name__ == '__main__':
         f"ID 100の単語: {id2t[100]}",
     ]
     
+    # 保存処理
     with open('p70_result.txt', 'w') as f:
         for line in results:
             print(line)
             f.write(line + '\n')
+    
+    with open('token_to_id.pkl', 'wb') as f:
+        pickle.dump(t2id, f)
+        
+    with open('id_to_token.pkl', 'wb') as f:
+        pickle.dump(id2t, f)
+    
+    torch.save(torch.from_numpy(E), 'embedding_matrix.pt')
+        
             
 
