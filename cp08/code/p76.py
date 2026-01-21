@@ -11,7 +11,6 @@ def train(model, loader, criterion, optimizer, device):
     for batch in tqdm.tqdm(loader): # dataset ではなく loader を回す
         optimizer.zero_grad()
         
-        # すでにバッチ化されているので unsqueeze は不要
         inputs = batch['input_ids'].to(device)
         labels = batch['label'].to(device)
         
