@@ -1,0 +1,10 @@
+Epoch 1: Dev Loss = 0.5054, Dev Acc = 0.7649
+Epoch 2: Dev Loss = 0.4831, Dev Acc = 0.7833
+Epoch 3: Dev Loss = 0.4682, Dev Acc = 0.7947
+Epoch 4: Dev Loss = 0.4797, Dev Acc = 0.7775
+Epoch 5: Dev Loss = 0.4618, Dev Acc = 0.8016
+Epoch 6: Dev Loss = 0.4652, Dev Acc = 0.7936
+Epoch 7: Dev Loss = 0.4654, Dev Acc = 0.7947
+Epoch 8: Dev Loss = 0.4675, Dev Acc = 0.7936
+Epoch 9: Dev Loss = 0.4572, Dev Acc = 0.8062
+Epoch 10: Dev Loss = 0.4566, Dev Acc = 0.8039
