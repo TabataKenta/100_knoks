@@ -20,7 +20,7 @@ def train(model, loader, criterion, optimizer, device):
         loss.backward()
         optimizer.step()
         
-        # 1バッチ分の損失を合計（バッチサイズを考慮する必要がある点に注意）
+        # 1バッチ分の損失を合計
         total_loss += loss.item() * inputs.size(0)
         
     return total_loss / len(loader.dataset)
