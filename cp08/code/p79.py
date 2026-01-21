@@ -95,7 +95,7 @@ if __name__ == '__main__':
     optimizer = torch.optim.SGD(model.parameters(), lr=0.1) # 学習率は適宜調整
 
     #  学習実行
-    for epoch in range(10):
+    for epoch in range(5):
         # 学習
         train_loss = train(model, train_loader, criterion, optimizer, device)
         # 評価
