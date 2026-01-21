@@ -58,7 +58,6 @@ def evaluate(model, loader, criterion, device):
     
     with torch.no_grad(): # 評価時は勾配計算を無効化
         for batch in loader:
-            # すでにバッチ化されているので unsqueeze は不要
             inputs = batch['input_ids'].to(device)
             labels = batch['label'].to(device)
             # 予測と誤差の計算のみを行う
