@@ -58,6 +58,7 @@ def evaluate(model, loader, criterion, device):
     
     with torch.no_grad(): # 評価時は勾配計算を無効化
         for batch in loader:
+            # すでにバッチ化されているので unsqueeze は不要
             inputs = batch['input_ids'].to(device)
             labels = batch['label'].to(device)
             # 予測と誤差の計算のみを行う
@@ -94,7 +95,7 @@ if __name__ == '__main__':
     optimizer = torch.optim.SGD(model.parameters(), lr=0.1) # 学習率は適宜調整
 
     #  学習実行
-    for epoch in range(5):
+    for epoch in range(10):
         # 学習
         train_loss = train(model, train_loader, criterion, optimizer, device)
         # 評価
