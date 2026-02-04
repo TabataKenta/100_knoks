@@ -1,0 +1,20 @@
+Loading weights: 100%|█| 199/199 [00:00<00:00, 1692.29it/s, Materializing param=pooler.dense.weigh
+BertModel LOAD REPORT from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED    :can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Similarity between 'The movie was full of fun.' and 'The movie was full of excitement.': 0.9568
+Similarity between 'The movie was full of fun.' and 'The movie was full of crap.': 0.8490
+Similarity between 'The movie was full of fun.' and 'The movie was full of rubbish.': 0.8169
+Similarity between 'The movie was full of excitement.' and 'The movie was full of crap.': 0.8352
+Similarity between 'The movie was full of excitement.' and 'The movie was full of rubbish.': 0.7938
+Similarity between 'The movie was full of crap.' and 'The movie was full of rubbish.': 0.9226
