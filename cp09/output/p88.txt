@@ -1,0 +1,6 @@
+Loading weights: 100%|███████| 201/201 [00:00<00:00, 2323.15it/s, Materializing param=classifier.weight]
+Text: 'The movie was full of incomprehensibilities.' => Predicted class: 0
+Text: 'The movie was full of fun.' => Predicted class: 1
+Text: 'The movie was full of excitement.' => Predicted class: 1
+Text: 'The movie was full of crap.' => Predicted class: 0
+Text: 'The movie was full of rubbish.' => Predicted class: 0
