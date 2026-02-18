@@ -1,0 +1,14 @@
+$ python3 p94.py
+Loading weights: 100%|█████████| 338/338 [00:00<00:00, 3243.08it/s, Materializing param=model.norm.weight]
+プロンプト：<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+What do you call a sweet eaten after dinner?<|im_end|>
+<|im_start|>assistant
+
+生成された応答：system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.
+user
+What do you call a sweet eaten after dinner?
+assistant
+A sweet food typically eaten after dinner is called an "after-dinner treat" or simply an "after-meal dessert." Examples include cookies, ice cream, cakes, and other pastries.
