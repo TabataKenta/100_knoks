@@ -1,0 +1,14 @@
+$ python3 p95.py
+Loading weights: 100%|█████████| 338/338 [00:00<00:00, 2700.76it/s, Materializing param=model.norm.weight]
+プロンプト：<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+What do you call a sweet eaten after dinner?<|im_end|>
+<|im_start|>assistant
+A dessert.<|im_end|>
+<|im_start|>user
+Please give me the plural form of the word with its spelling in reverse order.<|im_end|>
+<|im_start|>assistant
+
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+生成された応答： The plural form is "desserts."
