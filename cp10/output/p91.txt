@@ -1,0 +1,18 @@
+$ python3 p91.py
+モデルとトークナイザーの準備中...
+Loading weights: 100%|█| 148/148 [00:00<00:00, 3557.73it/s, Materializing param=transformer
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+=== Greedy Decoding ===
+The movie was full of jokes and jokes about how the movie was a joke. It was a joke about how the movie was a joke. It was
+
+=== Beam Search Decoding(num_beams=5) ===
+The movie was full of jokes and jokes and jokes and jokes and jokes and jokes and jokes and jokes and jokes and jokes and jokes and jokes and jokes
+
+=== Sampling Decoding (Temperature=0.1) ===
+The movie was full of jokes and jokes and jokes and jokes and jokes and jokes and jokes and jokes and jokes and jokes and jokes and jokes and jokes
+
+=== Sampling Decoding (Temperature=0.7) ===
+The movie was full of the usual cliche about Hollywood's tendency to use a film as a means to try to find some sort of success, but
+
+=== Sampling Decoding (Temperature=1.5) ===
+The movie was full of hilarious jokes on its cover when that happened about a year ago. Maybe if anyone were doing that you'd give 'em some
