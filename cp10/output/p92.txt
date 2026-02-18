@@ -1,0 +1,39 @@
+$ python3 p92.py
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█| 148/148 [00:00<00:00, 3028.16it/s, Materializing param=transformer.wte.we
+生成されたテキスト: The movie was full of great characters and good humor. We knew this was going to be a good movie.
+
+How soon did the studio decide
+
+生成されたテキストの各トークンとその確率：
+トークン:  movie, 尤度: 0.000228
+トークン:  was, 尤度: 0.085014
+トークン:  full, 尤度: 0.000519
+トークン:  of, 尤度: 0.961997
+トークン:  great, 尤度: 0.018644
+トークン:  characters, 尤度: 0.036874
+トークン:  and, 尤度: 0.259692
+トークン:  good, 尤度: 0.006262
+トークン:  humor, 尤度: 0.040769
+トークン: ., 尤度: 0.411300
+トークン:  We, 尤度: 0.023698
+トークン:  knew, 尤度: 0.022635
+トークン:  this, 尤度: 0.034785
+トークン:  was, 尤度: 0.376604
+トークン:  going, 尤度: 0.690351
+トークン:  to, 尤度: 0.997059
+トークン:  be, 尤度: 0.871861
+トークン:  a, 尤度: 0.524864
+トークン:  good, 尤度: 0.054658
+トークン:  movie, 尤度: 0.392632
+トークン: ., 尤度: 0.238835
+トークン: 
+, 尤度: 0.077508
+トークン: 
+, 尤度: 0.998632
+トークン: How, 尤度: 0.028399
+トークン:  soon, 尤度: 0.000668
+トークン:  did, 尤度: 0.463099
+トークン:  the, 尤度: 0.121429
+トークン:  studio, 尤度: 0.011862
+トークン:  decide, 尤度: 0.162014
