@@ -1,0 +1,14 @@
+$ python3 p93.py
+Loading weights: 100%|█| 148/148 [00:00<00:00, 3363.28it/s, Materializing param=transformer.wte.we
+`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+テキスト: The movie was full of surprises
+パープレキシティ: 99.35
+
+テキスト: The movies were full of surprises
+パープレキシティ: 126.48
+
+テキスト: The movie were full of surprises
+パープレキシティ: 278.88
+
+テキスト: The movies was full of surprises
+パープレキシティ: 274.66
