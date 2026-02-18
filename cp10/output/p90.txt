@@ -1,0 +1,17 @@
+$ python3 p90.py
+入力テキスト: The movie was full of
+Loading weights: 100%|█| 148/148 [00:00<00:00, 3368.59it/s, Materializing param=transformer.wte.wei
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+トークンID列: ['The', 'Ġmovie', 'Ġwas', 'Ġfull', 'Ġof']
+
+上位10個のトークンとその確率:
+トークン: ' jokes', 確率: 0.021892
+トークン: ' great', 確率: 0.018644
+トークン: ' laughs', 確率: 0.011524
+トークン: ' bad', 確率: 0.010874
+トークン: ' surprises', 確率: 0.010667
+トークン: ' references', 確率: 0.010528
+トークン: ' fun', 確率: 0.009992
+トークン: ' humor', 確率: 0.007415
+トークン: ' "', 確率: 0.007408
+トークン: ' the', 確率: 0.006709
